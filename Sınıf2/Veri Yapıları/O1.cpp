@@ -178,7 +178,7 @@ int main(){
 			
 			ptr = head;
 					
-			while(ptr->sonraki != NULL){
+			while(ptr != NULL){
 				sayiTutucu += (pow(degisken, ptr->derece) * ptr->katSayi);		
 				ptr = ptr->sonraki;
 			}
