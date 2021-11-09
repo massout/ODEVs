@@ -128,18 +128,18 @@ int main(){
 	
 	while(nptr != NULL){
 		
-			cptr = cptr1;
+		cptr = cptr1;
 			
-			while(cptr->data != '['){
+		while(cptr->data != '['){
 					
-				buffer += cptr->data;
+			buffer += cptr->data;
 					
-				cptr = cptr->prev;
-			}				
+			cptr = cptr->prev;
+		}				
 			
-			cptr1 = cptr->prev;	
+		cptr1 = cptr->prev;	
 			
-			buffer = buffer * nptr->data;
+		buffer = buffer * nptr->data;
 				
 			
 		nptr = nptr->prev;
