@@ -1,3 +1,7 @@
+// Veri Yapıları Dersi 1. Ödev
+// Ödevin Sorusu PDF Şeklinde Bulunmakta
+
+
 #include <iostream>
 #include <string>
 
