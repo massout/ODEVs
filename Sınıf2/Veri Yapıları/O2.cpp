@@ -1,4 +1,4 @@
-// Veri Yapıları Dersi 1. Ödev
+// Veri Yapıları Dersi 2. Ödev
 // Ödevin Sorusu PDF Şeklinde Bulunmakta
 
 
