@@ -66,11 +66,8 @@ int ekle(Ogrenci& data) {
     return 0;
 }
 
-int arama(int next, int data) {
+int arama(int next, int data, int adim) {
     int charlie = hash_tablo[next][1];
-    int adim = 1;
-
-    adim++;
 
     if(hash_tablo[next][0] == data) {
         return 1;
@@ -79,7 +76,7 @@ int arama(int next, int data) {
     } else if(hash_tablo[charlie][1] == -1) {
         return -1;
     } else {
-        return arama(charlie, data);
+        return arama(charlie, data, ++adim);
     }
 }
 
@@ -114,10 +111,10 @@ int main() {
             cout << "Type the grade for search" << endl;
             cin >> aramaint;
 
-            if(arama(aramaint % 10, aramaint) == -1)
+            if(arama(aramaint % 10, aramaint, 2) == -1)
                 cout << "Girilen deger bulunamadi" << endl;
             else
-                cout << "Girilen " << aramaint << " degerine " << arama(aramaint % 10, aramaint) << " adimda ulasildi."
+                cout << "Girilen " << aramaint << " degerine " << arama(aramaint % 10, aramaint, 2) << " adimda ulasildi."
                      << endl;
 
             break;
