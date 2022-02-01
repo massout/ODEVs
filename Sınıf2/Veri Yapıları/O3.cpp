@@ -127,7 +127,7 @@ int main() {
             break;
 
         case 0:
-            cout << "\nQuiting" << endl;
+            cout << "\nQuitting" << endl;
 
             return 0;
 
