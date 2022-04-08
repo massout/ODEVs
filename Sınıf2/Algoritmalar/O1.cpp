@@ -209,7 +209,7 @@ int main() {
             calc_outputs(graph, node);
             break;
         case 3:
-            calc_edges(graph);
+            cout << calc_edges(graph) << endl;
             break;
         case 4:
             cout << "Total edge cost of given graph is: " << calc_edge_cost(graph) << endl;
@@ -226,7 +226,7 @@ int main() {
                 cout << "Graph is not fully connected" << endl;
             break;
         case 7:
-            if (!control_directional(graph))
+            if (control_directional(graph))
                 cout << "Graph is directional" << endl;
             else
                 cout << "Graph is not directional" << endl;
